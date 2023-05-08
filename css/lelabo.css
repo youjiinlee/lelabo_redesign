@@ -1,0 +1,1469 @@
+
+/*HEADER*/
+
+header {
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #acacae;
+	z-index: 9999;
+	position: relative;
+}
+
+.header .wrap {
+	padding: 20px 0 0 4.667%;
+}
+
+.main_logo a img {
+	display: block;
+	width: 167px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* input[id="menuicon"] */
+
+#menuicon {
+	display: none;
+}
+
+#menuicon+label {
+	display: block;
+	width: 30px;
+	height: 20px;
+	position: relative;
+	top: 42px;
+	left: 87.73%;
+	transition: all 0.35s;
+	cursor: pointer;
+}
+
+#menuicon:checked+label {
+	z-index: 2;
+}
+
+#menuicon+label span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 3.5px;
+	border-radius: 30px;
+	background: #222;
+	transition: ease 0.45s;
+}
+
+#menuicon+label span:nth-child(1) {
+	top: 0;
+}
+
+#menuicon+label span:nth-child(2) {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#menuicon+label span:nth-child(3) {
+	bottom: 0;
+}
+
+#menuicon:checked+label span:nth-child(1) {
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+#menuicon:checked+label span:nth-child(2) {
+	opacity: 0;
+}
+
+#menuicon:checked+label span:nth-child(3) {
+	bottom: 50%;
+	transform: translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+	width: 100%;
+	height: 100%;
+	background: #acacae;
+	position: fixed;
+	top: 0;
+	left: -2000px;
+	z-index: 1;
+	transition: all 0.45s;
+}
+
+.mb_menu_logo {
+	position: absolute;
+	top: 63px;
+	left: 41px;
+	/* width: 28.2%;
+	height: 40px; */
+	width: 27.2%;
+	height: 30px;
+	background: url(../img/mobile_logo.png) no-repeat center/cover;
+}
+
+#menuicon:checked+label+div {
+	left: 0;
+}
+
+.gnb {
+	position: absolute;
+	top: 29.1%;
+	margin-left: 10.2%;
+}
+
+.gnb_list ul li a {
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-family: "Bell Gothic Std";
+	text-decoration: none;
+	letter-spacing: 2.5px;
+}
+
+.gnb_list a::after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background-color: #fff;
+	border-radius: 10px;
+	transition: width 0.5s ease-out;
+}
+
+.gnb_list ul li a:hover::after {
+	width: 100%;
+}
+
+.gnb_list ul li a:hover {
+	color: #fff;
+}
+
+.pc_lang {
+	display: none;
+	position: absolute;
+	left: 75%;
+	top: 7.15%;
+	margin-left: 10.2%;
+	font-family: "Bell Gothic Std";
+	font-size: 13px;
+}
+
+/* globe 이미지 */
+
+.visual {
+	width: 85.6%;
+	margin: 0 auto;
+}
+
+.vs_img {
+	width: 100%;
+	height: 194px;
+	background: url(../img/main_photo.jpg) no-repeat center/cover;
+	margin-top: 33px;
+}
+
+.text_center {
+	width: 70%;
+	margin-top: 23px;
+}
+
+.read_more {
+	font-size: 15px;
+	line-height: 16px;
+	text-align: left;
+}
+
+.read_more>a {
+	display: block;
+	margin-top: 45px;
+}
+
+.r_m_box {
+	width: 200px;
+	height: 1px;
+	border: 1px solid #000;
+	margin-top: 16px;
+}
+
+.arrow {
+	position: absolute;
+	width: 52px;
+	margin-left: 20%;
+}
+
+.text {
+	overflow: hidden;
+	width: 321px;
+	height: 112px;
+	margin-top: 41px;
+}
+
+.text>h2 {
+	font-size: 24px;
+	line-height: 25px;
+	font-weight: 150;
+}
+
+.text>p {
+	font-size: 13px;
+	line-height: 14px;
+	margin-top: 17px;
+}
+
+.text span {
+	margin-right: 25px;
+}
+
+.text span:nth-of-type(3) {
+	float: right;
+	margin-top: 18px;
+}
+
+.text span:nth-of-type(4) {
+	float: right;
+	margin-top: 18px;
+}
+
+.con1 {
+	margin-top: 110px;
+	padding-bottom: 120px;
+}
+
+.con1_sub>h2 {
+	text-align: center;
+	font-size: 27px;
+	font-family: "Bell Gothic Std";
+}
+
+.con1_sub>p {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Bell Gothic Std";
+	margin-bottom: 43px;
+}
+
+.con1_img {
+	width: 100%;
+	height: 571px;
+	background: url(../img/con1_photo.jpg) no-repeat center/cover;
+	margin-bottom: 71px;
+}
+
+/* 1swiper */
+
+.swiper {
+	position: relative;
+}
+
+.swiper2 {
+	position: relative;
+}
+
+.swiper3 {
+	position: relative;
+}
+
+.swiper-slide img {
+	width: 81.06%;
+	position: relative;
+	left: 9.6%;
+}
+
+.swiper-slide a h2 {
+	font-size: 16px;
+	margin: 0 auto;
+	font-family: "Bell Gothic Std";
+	text-align: center;
+}
+
+.swiper-slide p {
+	font-size: 13px;
+	text-align: center;
+}
+
+.swiper-slide p:nth-of-type(1) {
+	margin-top: 15px;
+}
+
+.text_wrap {
+	position: absolute;
+	bottom: -120px;
+	left: 0;
+	right: 0;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	display: block;
+	z-index: 2;
+	-webkit-transition: 0.4s;
+	transition: 1s;
+	font-size: 30px;
+	color: #fff;
+}
+
+.con3 .swiper-button-next,
+.con3 .swiper-button-prev {
+	color: #000;
+	font-size: 20px;
+}
+
+/* //1swiper */
+visual .con2 {
+	width: 100%;
+}
+
+.banner_con2 {
+	width: 100%;
+	height: 261px;
+	background: url(../img/con2_photo.jpg) no-repeat center/cover;
+	margin-top: 110px;
+}
+
+.section_con2 {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 44px;
+}
+
+.section_con2 p {
+	text-align: center;
+	font-size: 13px;
+}
+
+.section_sub {
+	font-family: "Bell Gothic Std";
+	font-size: 27px;
+	text-align: center;
+	margin-top: 37px;
+}
+
+.con2_menu {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.products_menu {
+	margin-top: 30px;
+}
+
+.products_menu>ul {
+	font-family: "Bell Gothic Std";
+	font-size: 13px;
+	position: relative;
+}
+
+
+.products_menu>ul>li {
+	margin-bottom: 18px;
+	float: left;
+	width: 50%;
+}
+
+.products_menu>ul>li:nth-of-type(2) {
+	float: right;
+	text-align: right;
+}
+
+.products_menu>ul>li:nth-of-type(4) {
+	float: right;
+	text-align: right;
+}
+
+.products_menu ul li a:hover {
+	color: #acacae;
+}
+
+/* swiper2 */
+
+.text_wrap2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Bell Gothic Std";
+	font-size: 20px;
+	color: #fff;
+	z-index: 1;
+}
+
+/* con3 */
+
+.con3 {
+	display: block;
+	width: 100%;
+}
+
+.section_con3 h2 {
+	text-align: center;
+	font-family: "Bell Gothic Std";
+	font-size: 27px;
+	margin-top: 110px;
+	margin-bottom: 35px;
+}
+
+.con3_list_wrap>div {
+	margin-bottom: 60px;
+}
+
+.item1 {
+	background: url(../img/c3_sandalwood.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item2 {
+	background: url(../img/c3_tonka_bean.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item3 {
+	background: url(../img/c3_black_tea_leaves.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item4 {
+	background: url(../img/c3_juniper.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item5 {
+	background: url(../img/c3_rose_centiflia.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item6 {
+	background: url(../img/c3_pettigrain.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item7 {
+	background: url(../img/c3_bergamote.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item8 {
+	background: url(../img/c3_neroli.jpg) no-repeat center/cover;
+	height: 302px;
+	width: 80.53%;
+	margin: 0 auto;
+}
+
+.item1,
+.item3,
+.item5,
+.item7 {
+	margin-bottom: 50px;
+}
+
+.con3_list_wrap h3 {
+	position: relative;
+	top: 318px;
+	font-family: "Bell Gothic Std";
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 350px;
+}
+
+.con3_item_btn {
+	width: 58.6%;
+	height: 45px;
+	background-color: #acacae;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.con3_item_btn>a {
+	display: block;
+	font-family: "Bell Gothic Std";
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 12px;
+}
+
+.con4_sub>h2 {
+	text-align: center;
+	font-family: "Bell Gothic Std";
+	font-size: 27px;
+	margin-top: 120px;
+	margin-bottom: 35px;
+}
+
+.con4_1 {
+	width: 85.6%;
+	margin: 0 auto;
+}
+
+.con4_img {
+	width: 100%;
+	text-align: center;
+	transform: translateY(150px);
+	transition: all 1s ease;
+	opacity: 0.2;
+	transition-delay: 0.4s;
+}
+
+.con4_img {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.con4_text1 {
+	padding: 15px 0;
+	font-family: "Bell Gothic Std";
+	font-size: 16px;
+	text-align: left;
+}
+
+.con4_text1>strong {
+	letter-spacing: 1.5px;
+}
+
+.con4_text1>p {
+	font-size: 13px;
+	width: 161px;
+}
+
+.con4_lelabo>img {
+	width: 30.4%;
+	height: 14.93%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* con5 */
+
+.con5 {
+	width: 85.6%;
+	margin: 0 auto;
+}
+
+.con5_sub>h2 {
+	text-align: center;
+	font-family: "Bell Gothic Std";
+	font-size: 27px;
+	margin-top: 120px;
+	margin-bottom: 35px;
+}
+
+.insta {
+	width: 85.6%;
+}
+
+.insta a {
+	display: inline-block;
+	width: 204px;
+	height: 24px;
+	vertical-align: middle;
+	font-size: 15px;
+	font-family: "Bell Gothic Std";
+	letter-spacing: 1.5px;
+	margin-bottom: 15px;
+}
+
+.insta a:nth-of-type(1) {
+	width: 24px;
+	height: 24px;
+}
+
+.insta a:nth-of-type(2) {
+	margin-left: 5px;
+}
+
+.con5 .swiper {
+	overflow: hidden;
+
+}
+
+
+
+.c5_swiper_slide1 {
+	width: 100%;
+	height: 322px;
+	background: url(../img/con5_img1.jpg) no-repeat center/cover;
+}
+
+.c5_swiper_slide2 {
+	width: 100%;
+	height: 322px;
+	background: url(../img/con5_img2.jpg) no-repeat center/cover;
+}
+
+.c5_swiper_slide3 {
+	width: 100%;
+	height: 322px;
+	background: url(../img/con5_img3.jpg) no-repeat center/cover;
+}
+
+.insta>p {
+	font-size: 12px;
+	font-family: "Bell Gothic Std";
+	letter-spacing: 1px;
+}
+
+/* footer */
+
+.row {
+	display: block;
+	background-color: #acacae;
+	width: 100%;
+	height: 275px;
+}
+
+.ft_box1 {
+	width: 85.6%;
+	margin: 0 auto;
+	height: 275px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	margin-top: 120px;
+}
+
+.footer_nav_inner {
+	padding: 20px 0 0 20px;
+	font-size: 14px;
+	font-family: "Bell Gothic Std";
+}
+
+.footer_nav_inner2 {
+	display: none;
+}
+
+.ft_box2 {
+	margin-top: 32px;
+	width: 100%;
+	border-top: 1px solid #fff;
+}
+
+.icon_place a {
+	position: relative;
+	top: 22px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.icon_place p {
+	position: relative;
+	top: 30px;
+	left: 15px;
+	font-size: 13px;
+}
+
+.icon_insta {
+	float: right;
+	margin-right: 20px;
+}
+
+.icon_insta a {
+	width: 30px;
+	height: 20px;
+	float: right;
+	margin-left: 15px;
+}
+
+.icon_insta a:nth-of-type(2) {
+	width: 20px;
+	height: 20px;
+	margin-top: 12px;
+}
+
+/* 768 */
+@media screen and (min-width: 768px) {
+	header {
+		height: 154px;
+	}
+
+	.main_logo a img {
+		width: 276px;
+		height: 50px;
+		position: absolute;
+		left: 50%;
+
+	}
+
+	.mb_menu_logo {
+		top: 75px;
+		left: 75px;
+		width: 20.56%;
+		height: 46px;
+	}
+
+	#menuicon+label {
+		display: block;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		top: 65px;
+		left: 90%;
+		transition: all 0.35s;
+		cursor: pointer;
+	}
+
+	.gnb_list ul li a {
+		height: 80px;
+		line-height: 80px;
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+
+	.pc_lang {
+		display: block;
+		position: absolute;
+		left: 70%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		margin-left: 10.2%;
+		font-family: "Bell Gothic Std";
+		font-size: 13px;
+	}
+
+	.pc_world {
+		position: absolute;
+		top: -3px;
+		left: 30px;
+		display: block;
+		width: 23px;
+		height: 24px;
+	}
+
+	.visual {
+		width: 90.49%;
+	}
+
+	.vs_img {
+		width: 63.54%;
+		height: 295px;
+		margin-top: 143px;
+		position: relative;
+		top: 0;
+		right: -36.21%;
+	}
+
+	.text_center {
+		width: 44.01%;
+		margin-top: 23px;
+		position: relative;
+		top: 0;
+		right: -36.21%;
+	}
+
+	.read_more {
+		font-size: 18px;
+		line-height: 19px;
+		text-align: left;
+	}
+
+	.text {
+		position: relative;
+		bottom: 580px;
+		right: 85%;
+		width: 571px;
+		height: 571px;
+		transform: rotate(-90deg);
+	}
+
+	.text>h2 {
+		font-size: 40px;
+		line-height: 42px;
+		font-weight: 150;
+	}
+
+	.text>p {
+		font-size: 18px;
+		line-height: 19px;
+		margin-top: 30px;
+	}
+
+	.text span {
+		margin-right: 21px;
+	}
+
+	.text span:nth-of-type(3) {
+		float: right;
+		margin-top: 30px;
+	}
+
+	.text span:nth-of-type(4) {
+		float: right;
+		margin-top: 30px;
+	}
+
+	.con1 {
+		margin-top: -220px;
+	}
+
+	.con1_sub>h2 {
+		font-size: 30px;
+	}
+
+	.con1_sub>p {
+		font-size: 20px;
+		margin-bottom: 60px;
+	}
+
+	.con1_img {
+		height: 985px;
+		margin-bottom: 87px;
+	}
+
+	.con2 {
+		margin-top: 220px;
+	}
+
+	.banner_con2 {
+		height: 481px;
+	}
+
+	.con2 .swiper-slide img {
+		width: 81.06%;
+		position: relative;
+		left: 9.6%;
+	}
+
+	.section_con2 {
+		width: 54%;
+		margin-top: 45px;
+	}
+
+	.section_con2 p {
+		font-size: 18px;
+	}
+
+	.section_sub {
+		font-size: 30px;
+		margin-top: 70px;
+	}
+
+	.con2_menu {
+		width: 85.16%;
+	}
+
+	.products_menu>ul {
+		font-size: 14px;
+		display: flex;
+		left: 5px;
+	}
+
+	.products_menu>ul>li {
+		margin-bottom: 25px;
+		display: flex;
+	}
+
+	.con2 .swiper-slide img {
+		width: 90.46%;
+		position: relative;
+		left: 5.3%;
+	}
+
+	.section_con3 h2 {
+		font-size: 30px;
+		margin-top: 220px;
+		margin-bottom: 60px;
+	}
+
+	.con3 .swiper-slide div {
+		width: 62.11%;
+		position: relative;
+	}
+
+	.item1,
+	.item3,
+	.item5,
+	.item7 {
+		margin-bottom: 65px;
+	}
+
+	.con3_list_wrap h3 {
+		font-size: 23px;
+	}
+
+	.con3_item_btn {
+		width: 50.65%;
+		height: 66px;
+		margin-top: 140px;
+	}
+
+	.con3_item_btn>a {
+		font-size: 24px;
+		padding: 16px;
+	}
+
+	.con4_sub>h2 {
+		font-size: 30px;
+		margin-top: 220px;
+		margin-bottom: 70px;
+	}
+
+	.con4_1 {
+		width: 90.46%;
+		margin: 0 auto;
+	}
+
+	.con4_text1 {
+		padding: 30px 0;
+		font-size: 25px;
+	}
+
+	.con4_text1>strong {
+		letter-spacing: 2px;
+	}
+
+	.con4_text1>p {
+		font-size: 18px;
+		width: 220px;
+	}
+
+	.con4_lelabo>img {
+		width: 30.4%;
+		height: 14.93%;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.con5 {
+		width: 90.46%;
+	}
+
+	.con5_sub>h2 {
+		font-size: 30px;
+		margin-top: 220px;
+		margin-bottom: 80px;
+	}
+
+	.con5 .swiper-slide div {
+		height: 610px;
+	}
+
+	.insta a {
+		display: inline-block;
+		width: 204px;
+		height: 24px;
+		vertical-align: middle;
+		font-size: 15px;
+		font-family: "Bell Gothic Std";
+		letter-spacing: 1.5px;
+		margin-bottom: 35px;
+	}
+
+	.row {
+		height: 483px;
+	}
+
+	.ft_box1 {
+		width: 90.46%;
+		height: 483px;
+		margin-top: 220px;
+	}
+
+	.ft_menu {
+		float: left;
+		padding: 0 20px;
+	}
+
+	.footer_nav_inner {
+		padding: 35px 0 0 10px;
+		position: relative;
+		font-size: 16px;
+		font-family: "Bell Gothic Std";
+	}
+
+	.footer_nav_inner2 {
+		display: block;
+		font-size: 15px;
+		line-height: 35px;
+		font-family: "Bell Gothic Std";
+		margin-top: 30px;
+		padding: 0 0 0 20px;
+	}
+
+	.footer_nav_inner2 li {
+		margin-left: -10px;
+	}
+
+	.ft_box2 {
+		float: left;
+		margin-top: 120px;
+		width: 100%;
+		border-top: 1px solid #fff;
+	}
+
+	.icon_place a {
+		top: 35px;
+		left: 20px;
+	}
+
+	.icon_place p {
+		font-size: 16px;
+		top: 40px;
+		left: 30px;
+	}
+
+	.icon_insta a {
+		width: 40px;
+		height: 40px;
+		margin-left: 25px;
+	}
+
+	.icon_insta a:nth-of-type(2) {
+		width: 25px;
+		height: 25px;
+		margin-top: 16px;
+	}
+}
+
+/* 1024 */
+@media screen and (min-width: 1024px) {
+	.main_logo a img {
+		width: 216px;
+		height: 39px;
+		position: absolute;
+		left: 20.68%;
+
+	}
+
+	#menuicon+label {
+		left: 92%;
+	}
+
+	.pc_lang {
+		position: absolute;
+		left: 72%;
+		margin-left: 7.9%;
+		font-family: "Bell Gothic Std";
+		font-size: 15px;
+	}
+
+	.pc_world {
+		position: absolute;
+		top: -3px;
+		left: 35px;
+		display: block;
+		width: 28px;
+		height: 28px;
+	}
+
+	.mb_menu_logo {
+		top: 75px;
+		left: 65px;
+		width: 23.44%;
+		height: 70px;
+	}
+
+	.gnb {
+		top: 37.1%;
+		margin-left: 6.56%;
+	}
+
+	.gnb_list ul li a {
+
+		height: 80px;
+		line-height: 80px;
+		font-size: 23px;
+		letter-spacing: 4px;
+	}
+
+	.visual {
+		position: relative;
+		width: 88.28%;
+	}
+
+	.vs_img {
+		width: 65.72%;
+		height: 407px;
+		margin-top: 55px;
+	}
+
+	.text_center {
+		width: 33.11%;
+		margin-top: 30px;
+	}
+
+
+	.text {
+		position: absolute;
+		bottom: 0;
+		right: 45px;
+	}
+
+	.text>h2 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	.text>p {
+		font-size: 20px;
+		line-height: 20px;
+		margin-top: 45px;
+	}
+
+	.con1 {
+		margin-top: 300px;
+	}
+
+	.con1 .text_wrap h2 {
+		font-size: 19px;
+	}
+
+	.con1 .text_wrap a {
+		font-size: 14px;
+	}
+
+	.con2 {
+		margin-top: 300px;
+	}
+
+	.banner_con2 {
+		height: 528px;
+	}
+
+	.section_con2 {
+		width: 45.6%;
+		margin-top: 50px;
+	}
+
+	.section_con2 p {
+		font-size: 19px;
+	}
+
+	.section_sub {
+		margin-top: 80px;
+	}
+
+	.products_menu>ul {
+		font-size: 18px;
+		left: 8px;
+	}
+
+	.products_menu>ul>li {
+		margin-bottom: 35px;
+	}
+
+	.con2 .swiper-slide img {
+		width: 88.28%;
+		position: relative;
+		left: 5.78%;
+	}
+
+	.con2 .text_wrap h2 {
+		font-size: 50px;
+	}
+
+	.section_con3 h2 {
+		margin-top: 300px;
+		margin-bottom: 70px;
+	}
+
+	.con3_item_btn {
+		width: 319px;
+		height: 70px;
+		margin-top: 200px;
+	}
+
+	.con3 .swiper-slide div {
+		width: 80%;
+		position: relative;
+	}
+
+	.con3_item_btn {
+		width: 35.85%;
+	}
+
+	.con3_item_btn>a {
+		font-size: 26px;
+		padding: 18px;
+	}
+
+	.con4_sub>h2 {
+		margin-top: 300px;
+		margin-bottom: 80px;
+	}
+
+	.con4_1 {
+		width: 88.28%;
+	}
+
+	.con4_text1 {
+		padding: 40px 0;
+		font-size: 30px;
+	}
+
+	.con4_text1>p {
+		font-size: 20px;
+		width: 245px;
+	}
+
+	.con5 {
+		width: 88.28%;
+	}
+
+	.con5_sub>h2 {
+		margin-top: 300px;
+		margin-bottom: 90px;
+	}
+
+	.con5 .swiper-slide div {
+		width: 100%;
+		height: 490px;
+	}
+
+	.insta a {
+		font-size: 16px;
+	}
+
+	.con5 .swiper-slide div {
+		height: 700px;
+	}
+
+	.ft_box1 {
+		width: 88.28%;
+		margin-top: 300px;
+	}
+
+	.ft_menu {
+		padding: 0 30px;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	header {
+		height: 155px;
+	}
+
+	.con1_img {
+		height: 1000px;
+	}
+
+	.main_logo a img {
+		position: absolute;
+		left: 11.68%;
+
+	}
+
+	#menuicon+label {
+		display: none;
+	}
+
+	.mb_menu_logo {
+		display: none;
+	}
+
+	.sidebar {
+		position: relative;
+		top: 50px;
+		left: -250px;
+	}
+
+	.gnb_list ul li a:hover {
+		color: #000;
+	}
+
+	.gnb_list a::after {
+		background-color: #000;
+		bottom: -1px;
+	}
+
+	.gnb {
+		position: absolute;
+		top: 50%;
+		margin-left:750px;
+	}
+
+	.gnb_list ul {
+		display: flex;
+	}
+
+	.gnb_list ul li a {
+		position: relative;
+		height: 60px;
+		line-height: 60px;
+		font-size: 18px;
+		letter-spacing: 6px;
+		float: left;
+		margin-right: 60px;
+	}
+
+	.pc_lang {
+		position: absolute;
+		left: 72%;
+		margin-left: 18.9%;
+	}
+
+	.visual {
+		position: relative;
+		width: 100%;
+	}
+
+	.vs_img {
+		width: 41.19%;
+		height: 490px;
+		margin-top: 310px;
+		margin-left: -10%;
+	}
+
+	.text_center {
+		width: 18%;
+		margin-left: 38.65%;
+		margin-top: -310px;
+	}
+
+	.read_more {
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+	.arrow {
+		margin-left: 14%;
+	}
+
+	.text {
+		position: absolute;
+		bottom: 0;
+		right: 320%;
+	}
+
+	.section_con2 {
+		width: 25%;
+		margin-top: 50px;
+	}
+
+	.con2_menu {
+		width: 48.56%;
+	}
+
+	.con2 .swiper-slide img {
+		width: 1502px;
+		position: relative;
+		left: 10.86%;
+	}
+
+	.con2 .text_wrap2 h2 {
+		font-size: 30px;
+	}
+
+	.con3_item_btn {
+		width: 316px;
+	}
+
+.con4_sub{
+	margin-bottom: 200px;
+}
+
+	.con4_1 {
+		width: 90.46%;
+		margin: 0 auto;
+	}
+
+	.con4_text1 {
+		padding: 30px 0;
+		font-size: 25px;
+	}
+
+	.con4_text1>strong:nth-of-type(2) {
+		position: absolute;
+		left: 200px;
+	}
+
+	.con4_img {
+		width: 93.88%;
+		margin: 0 auto;
+	}
+
+	.con4_1:nth-last-child(1) {
+		float: right;
+		width: auto;
+	}
+
+	.con4_1 {
+		float: left;
+		width: auto;
+	}
+
+	.con4_img1 {
+		width: 960px;
+		height: 600px;
+	}
+
+	.con4_2 {
+		position: relative;
+		left: -100px;
+		bottom: 150px;
+	}
+
+	.con4_lelabo>img {
+		width: 378px;
+		height: 183px;
+	}
+
+	.con4_img2 {
+		width: 545px;
+		height: 733px;
+	}
+
+	.con5 {
+		width: 93.88%;
+		margin: 0 auto;
+	}
+
+	.con5 .swiper-slide div {
+		width: 100%;
+		height: 570px;
+	}
+
+	.ft_box1 {
+		width: 93.88%;
+	}
+
+	.footer_nav_inner {
+		padding: 45px 0 0 50px;
+	}
+
+	.footer_nav_inner2 {
+
+		padding: 0 0 0 60px;
+	}
+
+	.icon_place a {
+		left: 70px;
+	}
+
+	.icon_place p {
+		left: 100px;
+	}
+
+
+	.icon_insta a {
+		width: 40px;
+		height: 40px;
+		margin-left: 80px;
+	}
+
+	.icon_insta a:nth-of-type(1) {
+		position: relative;
+		right: 45px;
+	}
+
+}
